@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3333 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "core-js": "^3.9.1",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.0.3",
+    "cross-env": "^7.0.3",
     "postcss": "^8.2.8"
   }
 }
