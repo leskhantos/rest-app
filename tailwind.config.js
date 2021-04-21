@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'regular-yellow': '#f0b62b',
+        'rest-yellow': '#f0b62b',
+        'rest-black':'#b8b9b9'
       }
     }
   }
