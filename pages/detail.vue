@@ -45,12 +45,13 @@
         <p class="font-bold text-left font-rest-black text-base">Description</p>
         <p class="leading-relaxed text-sm font-rest-black">Lorem Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
         <p class="font-rest-black text-xs"><span class="font-bold">Calorie of food(kcal):</span> 299</p>
-        <rest-button
-          class="px-24 py-4 bg-rest-yellow rounded-md text-white focus:border-transparent"
+        <nuxt-link to="/"
+                   class="px-24 py-4 bg-rest-yellow rounded-md text-white focus:border-transparent"
+        ><rest-button
           title="Watch video"
           type="primary"
           :svgIcon="'videoIcon'"
-        />
+        /></nuxt-link>
       </div>
     </div>
   </div>
