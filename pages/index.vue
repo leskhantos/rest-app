@@ -23,7 +23,7 @@
         <h1 class="font-bold">Омлет с овощами</h1>
 <!--        <img class="w-full" src="https://i.ytimg.com/vi/qew27BNl7io/maxresdefault.jpg" alt="" />-->
         <iframe class="w-full"
-                src="https://www.youtube.com/watch?v=L3j_BLWqJSU?autoplay=1&mute=1">
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
         </iframe>
         <nuxt-link to="/detail" class="badge absolute top-0 right-0 m-1 text-rest-yellow  px-2 text-xs rounded">Состав</nuxt-link>
         <div class="info-box text-xs flex p-1 font-semibold text-rest-yellow">
