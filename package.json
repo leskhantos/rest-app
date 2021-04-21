@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.4"
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.15.4",
+    "sass-loader": "^10.1.1",
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.0.3",
