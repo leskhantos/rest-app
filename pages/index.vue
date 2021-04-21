@@ -1,14 +1,14 @@
 <template>
-  <div class='header-wrapper'>
+  <div class='header-wrapper' :style="{ backgroundImage: `url(${image})`}">
     <div class='row'>
       <div class='column'>
-        <div class='first-column'>
-          <h3>LOGO</h3>
+        <div class='first-column text-3xl'>
+          <h3 class="text-rest-blacker mt-7">LOGO</h3>
         </div>
       </div>
       <div class='column'>
         <div class='second-column'>
-          <h3>Чайла</h3>
+          <img class="w-full h-15" src="../static/img/logo/logo.png" alt="logo" />
         </div>
       </div>
     </div>
@@ -21,7 +21,6 @@
     <div class="holder mx-auto w-10/12 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 rounded-md">
       <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
         <h1 class="font-bold">Омлет с овощами</h1>
-<!--        <img class="w-full" src="https://i.ytimg.com/vi/qew27BNl7io/maxresdefault.jpg" alt="" />-->
         <iframe class="w-full"
                 src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
         </iframe>
@@ -111,14 +110,19 @@
 </template>
 
 <script>
+import bgImage from "../static/img/bg.png"
 import StarIcon from "../components/icons/starIcon";
 export default {
-  components: {StarIcon}
+  components: {StarIcon},
+  data() {
+    return {
+      image: bgImage,
+    };
+  }
 }
 </script>
 
 <style>
-
 .header-wrapper {
   margin: 15px;
 }

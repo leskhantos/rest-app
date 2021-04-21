@@ -3,7 +3,7 @@
     <div>
       <div class="flex flex-col max-w-md bg-white px-8 py-6 rounded-xl space-y-5">
         <h3 class="font-serif font-bold text-gray-900 text-xl">Омлет с овощами</h3>
-        <img class="w-full rounded-md" src="https://img.pizza/150/150" alt="pizza" />
+        <img class="w-full rounded-md" src="../static/img/photo.png" alt="pizza" />
         <div class='row'>
           <div class='column'>
             <div class='first-column'>
@@ -13,10 +13,11 @@
               <star-icon class="pr-1"/>
               <star-icon class="pr-1"/>
             </div>
+            <p class="text-xs">5 Star Rating</p>
           </div>
           <div class='column'>
             <div class='second-column'>
-              <h3>Чайла</h3>
+              <img class="h-10 ml-12" src="../static/img/logo/logo.png" alt="logo" />
             </div>
           </div>
         </div>
@@ -33,6 +34,7 @@
           <div class='column'>
             <div class='second-column text-xs' >
               <rest-button
+                class="ml-12"
                 title="20 min"
                 type="primary"
                 :svgIcon="'timerIcon'"
@@ -41,10 +43,10 @@
           </div>
         </div>
         <p class="font-bold text-left font-rest-black text-base">Description</p>
-        <p class="leading-relaxed text-sm font-rest-black">Lorem  ipsum asdsad asd asd </p>
+        <p class="leading-relaxed text-sm font-rest-black">Lorem Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
         <p class="font-rest-black text-xs"><span class="font-bold">Calorie of food(kcal):</span> 299</p>
         <rest-button
-          class="px-24 py-4 bg-regular-yellow rounded-md text-white focus:border-transparent"
+          class="px-24 py-4 bg-rest-yellow rounded-md text-white focus:border-transparent"
           title="Watch video"
           type="primary"
           :svgIcon="'videoIcon'"
