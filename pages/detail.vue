@@ -1,8 +1,8 @@
 <template>
   <div class="">
     <div>
-      <img class="bg-photo" src="../static/img/photo.png" height="229px" alt="pizza"/>
-      <div class=" flex flex-col max-w-md px-8 py-4 space-y-5" style="border-radius:20px;background-color:white;margin-top: 200px">
+      <img class="bg-photo w-full" src="../static/img/photo.png" height="229px" alt="pizza"/>
+      <div class=" flex flex-col max-w-md px-8 py-4 space-y-5 w-full" style="border-radius:20px;background-color:white;margin-top: 200px">
         <h3 class="font-bold text-rest-blacker text-xl">Паста Медлей</h3>
         <div class='row'>
           <div class='column'>
@@ -48,7 +48,7 @@
         <nuxt-link to="/"
                    class="px-20 py-1 bg-rest-yellow text-xs rounded-md text-white focus:border-transparent"
         ><rest-button
-          class="ml-4"
+          style="margin-left: 20%"
           title="Watch video"
           type="primary"
           :svgIcon="'videoIcon'"

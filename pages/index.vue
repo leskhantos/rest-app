@@ -22,7 +22,7 @@
       <div class="each mb-10 m-2 border-gray-800 bg-gray-100 relative rounded-2xl">
         <h1 class="font-bold text-xl p-3">Паста Медлей</h1>
         <nuxt-link to="/detail" class="badge absolute top-5 right-0 m-1 text-rest-yellow  px-2 text-xs rounded">Состав</nuxt-link>
-        <iframe src="https://player.vimeo.com/video/25312553" height="260px" width="321px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+        <iframe src="https://player.vimeo.com/video/25312553" class="w-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
         </iframe>
         <div class="info-box text-xs flex p-1 font-semibold text-rest-yellow">
           <span class="p-1"><star-icon/></span>
