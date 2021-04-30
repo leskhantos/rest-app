@@ -1,9 +1,9 @@
 <template>
-  <div class="min-h-screen min-w-screen bg-gray-100 flex pt-10 justify-center">
+  <div class="">
     <div>
-      <div class="flex flex-col max-w-md bg-white px-8 py-6 rounded-xl space-y-5">
-        <h3 class="font-serif font-bold text-gray-900 text-xl">Омлет с овощами</h3>
-        <img class="w-full rounded-md" src="../static/img/photo.png" alt="pizza" />
+      <img class="bg-photo" src="../static/img/photo.png" height="229px" alt="pizza"/>
+      <div class=" flex flex-col max-w-md px-8 py-4 space-y-5" style="border-radius:20px;background-color:white;margin-top: 200px">
+        <h3 class="font-bold text-rest-blacker text-xl">Паста Медлей</h3>
         <div class='row'>
           <div class='column'>
             <div class='first-column'>
@@ -13,11 +13,11 @@
               <star-icon class="pr-1"/>
               <star-icon class="pr-1"/>
             </div>
-            <p class="text-xs">5 Star Rating</p>
+            <p class="text-xs text-rest-blacker">5 Star Rating</p>
           </div>
           <div class='column'>
             <div class='second-column'>
-              <img class="h-10 ml-12" src="../static/img/logo/logo.png" alt="logo" />
+              <img class="h-9 ml-20" src="../static/img/logo/logo.png" alt="logo" />
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
           <div class='column'>
             <div class='second-column text-xs' >
               <rest-button
-                class="ml-12"
+                class="ml-20"
                 title="20 min"
                 type="primary"
                 :svgIcon="'timerIcon'"
@@ -42,12 +42,13 @@
             </div>
           </div>
         </div>
-        <p class="font-bold text-left font-rest-black text-base">Description</p>
-        <p class="leading-relaxed text-sm font-rest-black">Lorem Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-        <p class="font-rest-black text-xs"><span class="font-bold">Calorie of food(kcal):</span> 299</p>
+        <p class="font-bold text-left text-rest-blacker text-base">Description</p>
+        <p class="leading-relaxed text-sm text-rest-blacker">Lorem Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p class="text-rest-blacker text-xs"><span class="font-bold">Calorie of food(kcal):</span> 299</p>
         <nuxt-link to="/"
-                   class="px-24 py-4 bg-rest-yellow rounded-md text-white focus:border-transparent"
+                   class="px-20 py-1 bg-rest-yellow text-xs rounded-md text-white focus:border-transparent"
         ><rest-button
+          class="ml-4"
           title="Watch video"
           type="primary"
           :svgIcon="'videoIcon'"
@@ -90,5 +91,11 @@ export default {
 .second-column {
   text-align: right;
   height: 100%;
+}
+.bg-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 </style>
