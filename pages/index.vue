@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import bgImage from "../static/img/bg.png"
+import bgImage from "../static/img/img.png"
 import StarIcon from "../components/icons/starIcon";
 export default {
   components: {StarIcon},
